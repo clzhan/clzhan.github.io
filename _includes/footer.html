@@ -1,30 +1,38 @@
+<footer class="mt-5 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <strong>Credits</strong>
+        <table class="table table-sm">
+          <tr>
+            <td>Main Director:</td>
+            <td><a href="szhshp.org">Szhshp</a></td>
+          </tr>
+          <tr>
+            <td>Dev Engine:</td>
+            <td>Ruby x Jekyll</td>
+          </tr>
+            <tr>
+              <td>Vi Director:</td>
+              <td>Bootstrap</td>
+            </tr>
+            <tr>
+              <td>Co-Vi Director</td>
+              <td>Stylish Portfolio</td>
+            </tr>
+          </table>
+          <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+        </div>
 
-{% if paginator %}
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a href="{{site.url}}/page{{paginator.next_page}}" class="older"><span class="mega-octicon octicon-playback-rewind" style="min-width: 32px;"></span></a>
-  {% else %}
-    <span class="next"><span class="mega-octicon octicon-playback-rewind" style="min-width: 32px;"></span></span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="{{site.url}}/" class="newer"><span class="mega-octicon octicon-playback-fast-forward" style="min-width: 32px;"></span></a>
-    {% else %}
-      <a href="{{site.url}}/page{{paginator.previous_page}}" class="newer"><span class="mega-octicon octicon-playback-fast-forward" style="min-width: 32px;"></span></a>
-    {% endif %}
-  {% else %}
-    <span class="previous"><span class="mega-octicon octicon-playback-fast-forward" style="min-width: 32px;"></span></span>
-  {% endif %}
-</div>
-{%  endif %}
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{site.google_analytics}}']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+        <div class="col-md-6">
+          <strong>Friend Links</strong>
+          <table class="table table-sm">
+            <tr>
+              <td><a href="http://szhshp.org"> szhshp.org</a></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>  
+  </footer>
